@@ -1,0 +1,663 @@
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("Satoshi-Light.woff2") format("woff2"),
+    url("Satoshi-Light.woff") format("woff"),
+    url("Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("Satoshi-LightItalic.woff2") format("woff2"),
+    url("Satoshi-LightItalic.woff") format("woff"),
+    url("Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("Satoshi-Regular.woff2") format("woff2"),
+    url("Satoshi-Regular.woff") format("woff"),
+    url("Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("Satoshi-Italic.woff2") format("woff2"),
+    url("Satoshi-Italic.woff") format("woff"),
+    url("Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-MediumItalic.woff") format("woff"),
+    url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("Satoshi-Bold.woff2") format("woff2"),
+    url("Satoshi-Bold.woff") format("woff"),
+    url("Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-BoldItalic.woff") format("woff"),
+    url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"),
+    url("../fonts/Satoshi-Black.woff") format("woff"),
+    url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-BlackItalic.woff") format("woff"),
+    url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 300.0 to 900.0
+  */
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("../fonts/Satoshi-Variable.woff") format("woff"),
+    url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 300.0 to 900.0
+  */
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-VariableItalic.woff") format("woff"),
+    url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Satoshi-Regular", sans-serif;
+  background-color: #ffffff;
+  color: #141414;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.greet {
+  margin-left: 10px;
+}
+.mu {
+  padding: 15px;
+  margin-top: 7px;
+  color: #141414;
+  font-weight: 300;
+}
+.mu:hover {
+  text-decoration: underline;
+}
+
+.sec-abt {
+  display: flex;
+  justify-content: center;
+  margin-top: 82px;
+  padding: 0px;
+}
+
+.intro {
+  font-size: 2rem;
+  font-family: "Satoshi-Bold", sans-serif;
+}
+.webico,.market {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 4px;
+}
+
+div.seca {
+  display: flex;
+  margin-top: 10px;
+}
+.fulltime {
+  margin-right: 4px;
+}
+.pen {
+  position: relative;
+  left: 4px;
+}
+.pen,
+.pen1 {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.pen1 {
+  position: relative;
+  top: 4px;
+  margin-left: 6px;
+}
+
+.seca2 {
+  margin-left: 13px;
+}
+
+.parttime {
+  position: relative;
+  top: 7px;
+}
+
+.game {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 13px;
+  margin-left: 10px;
+}
+.sec-projects {
+  background-color: #f0f0f0;
+  margin: 20px;
+  margin-top: 80px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.card-scroll {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 42px;
+}
+.case {
+  width: 35px;
+  height: 35px;
+}
+
+.pj {
+  font-family: "Satoshi-Bold", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  position: relative;
+  bottom: 6px;
+  left: 13px;
+}
+.project-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.list {
+  margin: 10px;
+  margin-top: 50px;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  gap: 4px;
+  left: 0px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  scrollbar-color: #ccc transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  animation: reveal_hero .75s ease-in;
+}
+/* animation */
+@keyframes reveal_hero {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
+.dis {
+  /* Animation shorthand */
+  animation: reveal_hero 0.5s ease-in 0s 1 normal none running;
+
+ 
+  animation-name: reveal_hero;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+.card-head {
+  margin: 6px;
+  margin-bottom: 20px;
+}
+.box1 {
+  background-color: #ffffff;
+  margin: 15px;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+.text,
+.text1,
+.text2 {
+  font-size: 14px;
+  word-spacing: 4px;
+  margin-left: 10px;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  margin-top: 10px;
+}
+.text {
+  margin-left: 0;
+  color: #343481;
+  background-color: #d0e8ff;
+  /* padding: 4px;
+  border-radius: 4px; */
+  font-weight: 600;
+}
+.text1 {
+  color: #9c67c2;
+  background-color: #d0e8ff;
+  /* padding: 4px;
+  border-radius: 4px; */
+  font-weight: 600;
+}
+.text2 {
+  color: #f08b8b;
+  background-color: #d0e8ff;
+  /* padding: 4px;
+  border-radius: 4px; */
+  font-weight: 600;
+}
+
+.pj-img {
+  width: 308px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.dt {
+  text-align: justify;
+  color: #8e8e8e;
+  margin: 2px;
+  margin-bottom: 14px;
+  width: 288px;
+}
+.title {
+  font-family: "Satoshi-Bold", sans-serif;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.box1:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  margin: 22px;
+}
+/* scroll btn */
+.cent{
+    display: flex;
+    justify-content: center;
+}
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.scroll-btn {
+  background: #636161;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1;
+  margin: 0 10px;
+  transition: background 0.3s ease;
+}
+.scroll-btn:hover {
+  background: #343481;
+}
+
+/* ensure .list scrolls horizontally */
+.list {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* optional: hide default scrollbar */
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.meet{
+  animation: reveal_hero .75s ease-in;
+}
+
+.about-me,.education{
+  background-color: #f0f0f0;
+  margin: 18px;
+  padding: 10px;
+  border-radius:25px ;
+  margin-top: 60px;
+}
+
+.abt-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ade{
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+.ade-cont{
+  margin-top:60px;
+  margin-bottom: 15px;
+}
+.abt-details{
+  text-align:center;
+  margin-top: 12px;
+}
+
+.tech{
+  margin-top: 40px;
+  text-align: center;
+  color: #141414;
+}
+.programs{
+  display: flex;
+  margin-top: 22px;
+  justify-content: center;
+}
+
+.p1-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.p-imgb{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 48%;
+  margin-top: 15px;
+}
+h3{
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  font-family:"Satoshi-Bold",sans-serif ;
+}
+
+.cont-details{
+  display: flex;
+  flex-direction: column;
+}
+.sl1{
+  width: 78px;
+  height: 78px;
+  padding: 9px;
+}
+
+.sll1{
+  width: 85px;
+  height: 85px;
+  padding: 9px;
+  position: relative;
+  top: 4px;
+}
+.slt,.slg{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 8px;
+  padding: 4px;
+}
+.slt{
+  padding: 5px;
+}
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.pv{
+  text-decoration: none;
+  background-color: #141414;
+  color: white;
+  padding: 4px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+.uni-sub{
+  display: flex;
+  justify-content: center;
+}
+.edu{
+  width: 50px;
+  height: 50px;
+}
+
+.ed{
+  font-size: 1.8rem;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  font-family: "Satoshi-Bold", sans-serif;
+}
+.hold-uni{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+.attend{
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 450px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+.tt,.tt1{
+  padding: 7px;
+  font-family: "Satoshi-Bold", sans-serif;
+}
+
+.tt1{
+  font-family: "Satoshi-Italic",sans-serif;
+}
+
+.small{
+  text-align: center;
+}
+
+/* mobile screens */
+@media only screen and (max-width: 600px) {
+  body{
+    z-index: -1;
+  }
+  .menu{
+    display: none;
+  }
+  .sec-abt{
+    margin-top: 0;
+    margin: 10px;
+    margin-left: 15px;
+  }
+
+  .intro{
+    font-size: 1.8rem;
+  }
+
+  .list{
+    flex-direction: column;
+    align-items: center;
+    overflow: unset;
+  }
+
+  .box1{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .pj-img{
+    width: 280px;
+  }
+
+  .sec-projects{
+    padding: 0;
+    border-radius: 25px;
+  }
+
+  .cent{
+    display: none;
+  }
+
+  .box1:hover{
+    transform:none ;
+    transition: none;
+    margin: 0;
+    margin-bottom: 10px !important;
+  }
+
+  .card-scroll{
+    justify-content: center;
+  }
+
+  .pj{
+    font-size: 1.38rem;
+  }
+  
+  .mobile-menu{
+    z-index: 1;
+    display: block;
+    position: sticky;
+    bottom: 15px;
+  }
+
+  .hold{
+    background-color: rgba(255, 255, 255, 0.1); /* semi-transparent */
+    backdrop-filter: blur(10px); /* optional glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    border: 1px solid #111;
+    margin: 30px;
+    border-radius: 45px;
+    box-shadow: 1px 5px 2px 2px;
+  }
+
+  .iconz{
+    width: 38px;
+    height: 38px;
+    margin: 10px;
+    margin-left: 20px;
+    border: 0px solid #111;
+    padding: 4px;
+  }
+  .hold-uni{
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+
+  }
+
+  .attend{
+    width: 350px;
+  }
+}
