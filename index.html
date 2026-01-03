@@ -4,253 +4,411 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Ademileke</title>
+    <title>Ademileke | Portfolio</title>
   </head>
   <body>
-    <main>
-      <header>
-        <div class="greeting">
-          <h2 class="greet">Hola!</h2>
+    <div class="vscode-shell">
+      <header class="titlebar">
+        <div class="titlebar-left">
+          <div class="traffic">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="title">Ademileke — Portfolio</span>
         </div>
-        <div class="menu">
-          <a href="" class="mu">About</a>
-          <a href="" class="mu">Project</a>
-          <a href="" class="mu">Resume</a>
-          <a href="" class="mu">Cover Letter</a>
-          <a href="" class="mu">Contact</a>
+        <nav class="titlebar-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="titlebar-actions">
+          <button class="btn icon-btn" id="theme-toggle" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 3.5a1 1 0 0 1 1 1V6a1 1 0 1 1-2 0V4.5a1 1 0 0 1 1-1Zm0 12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.5-2.5a1 1 0 0 1 1 1v.5a1 1 0 1 1-2 0V14a1 1 0 0 1 1-1ZM4.5 13a1 1 0 0 1 1 1v.5a1 1 0 1 1-2 0V14a1 1 0 0 1 1-1Zm12.02-6.02a1 1 0 0 1 1.41 0l.36.36a1 1 0 0 1-1.41 1.42l-.36-.36a1 1 0 0 1 0-1.42Zm-9.9 9.9a1 1 0 0 1 1.41 0l.36.36a1 1 0 1 1-1.41 1.42l-.36-.36a1 1 0 0 1 0-1.42Zm10.61 1.77a1 1 0 0 1-1.42 0l-.36-.36a1 1 0 1 1 1.42-1.41l.36.35a1 1 0 0 1 0 1.42ZM7.45 7.44a1 1 0 0 1-1.41 0l-.36-.36a1 1 0 1 1 1.41-1.42l.36.36a1 1 0 0 1 0 1.42ZM20 12a1 1 0 0 1 1 1v.5a1 1 0 1 1-2 0V13a1 1 0 0 1 1-1Z"
+              />
+            </svg>
+            Theme
+          </button>
+          <a
+            class="btn ghost"
+            href="https://drive.google.com/file/d/16c79EUgGwjM8bQ0of5vVQdS1keOf0cOO/view?usp=sharing"
+            >Resume</a>
         </div>
       </header>
-      <section class="sec-abt">
-        <div class="about">
-          <div class="about_section1">
-            <span class="quote">Coding or Decoding</span>
-            <img src="icons8-pen-50.png" alt="" class="pen1" />
-            <h1 class="intro">
-              Hey, I'm
-              <img src="" alt="" class="pic-logo" />
-              Ademileke
-            </h1>
-            <h1 class="intro">
-              And I Design
-              <img src="icons8-code-50.png" alt="" class="webico" />
-              websites and a Social Media
-              <img src="icons8-media-48.png" alt="" class="market" />
-              Manager.
-            </h1>
-            <div class="about_section2">
-              <div class="seca">
-                <div class="seca">
-                  <span class="fulltime">Full Time</span>
-                  <img src="icons8-pen-50.png" alt="" class="pen" />
-                </div>
-                <div class="seca2">
-                  <span class="parttime">Part Time</span>
-                  <img src="icons8-game-24.png" alt="" class="game" />
-                </div>
-                <div class="seca2">
-                  <img src="icons8-work-32.png" alt="" class="game" />
-                </div>
-                <div class="seca2">
-                  <img src="icons8-marketing-24.png" alt="" class="game" />
-                </div>
-              </div>
-            </div>
+
+      <div class="workspace">
+        <aside class="activitybar">
+          <a href="#home" class="activity-icon" aria-label="Home">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 11.5 12 4l8 7.5v7a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z" />
+            </svg>
+          </a>
+          <a href="#projects" class="activity-icon" aria-label="Projects">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 7.5h12a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Zm4-3h4a1 1 0 0 1 1 1v2H9v-2a1 1 0 0 1 1-1Z" />
+            </svg>
+          </a>
+          <a href="#education" class="activity-icon" aria-label="Education">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Zm3 5.5 6 3 6-3v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" />
+            </svg>
+          </a>
+          <a href="#skills" class="activity-icon" aria-label="Skills">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.5 7 4 12l4.5 5M15.5 7 20 12l-4.5 5M10 18l4-12" />
+            </svg>
+          </a>
+          <a href="#contact" class="activity-icon" aria-label="Contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 6h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9l-4 3v-3H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z" />
+            </svg>
+          </a>
+        </aside>
+
+        <aside class="sidebar">
+          <div class="sidebar-header">Explorer</div>
+          <div class="filetree">
+            <span class="filetree-title">PORTFOLIO</span>
+            <a href="#home" class="file">home.md</a>
+            <a href="#about" class="file">about.md</a>
+            <a href="#projects" class="file">projects.json</a>
+            <a href="#education" class="file">education.yml</a>
+            <a href="#skills" class="file">skills.ts</a>
+            <a href="#contact" class="file">contact.txt</a>
           </div>
-        </div>
-      </section>
-      <section class="sec-projects">
-        <div class="card-scroll">
-          <div class="meet">
-            <img src="icons8-briefcase-50.png" alt="" class="case" />
-            <span class="pj">Meet Some of my Works</span>
+          <div class="sidebar-footer">
+            <span class="status-pill">Available for work</span>
           </div>
-          <div></div>
-        </div>
-        <div class="project-list" id="project">
-          <div class="list">
-            <div class="box1">
-              <div class="card-head">
-                <span class="text">UI Design</span>
-                <span class="text1">Frontend Dev</span>
-                <span class="text2">2024</span>
-              </div>
-              <div class="preview">
-                <a href="https://gmgmton.netlify.app/"><img src="image1.png" alt="" class="pj-img" /></a>
-              </div>
-              <div class="details">
-                <h3 class="title">Gm-Gm Ton</h3>
-                <p class="dt">
-                  The Gm Gm website is a meme website / landing page built for a
-                  meme company in the year 2025 on the ton blockcahin. The GM represent the regular morning greeting.
-                </p>
-              </div>
-            </div>
-            <div class="box1">
-              <div class="card-head">
-                <span class="text">UI Design</span>
-                <span class="text1">Frontend Dev</span>
-                <span class="text2">2024</span>
-              </div>
-              <div class="preview">
-                <a href="https://tonnomads.netlify.app/"><img src="image2.png" alt="" class="pj-img" /></a>
-              </div>
-              <div class="details">
-                <h3 class="title">TonNomads</h3>
-                <p class="dt">
-                  The TonNomads webpage is a websites landing page built for 
-                  the growing community on the ton ecosystem with like-minded individuals
-                </p>
-              </div>
-            </div>
-            <div class="box1">
-              <div class="card-head">
-                <span class="text">UI Design</span>
-                <span class="text1">Frontend Dev</span>
-                <span class="text2">2024</span>
-              </div>
-              <div class="preview">
-                <a href=""><img src="image3.png" alt="" class="pj-img" /></a>
-              </div>
-              <div class="details">
-                <h3 class="title">C.C.C GCP</h3>
-                <p class="dt">
-                  This is a  church based landing page for easy access and updates to the members
-                  of the church
-                </p>
-              </div>
-            </div>
-            <div class="box1">
-              <div class="card-head">
-                <span class="text">UI Design</span>
-                <span class="text1">Frontend Dev</span>
-                <span class="text2">2024</span>
-              </div>
-              <div class="preview">
-                <a href=""><img src="image4.png" alt="" class="pj-img" /></a>
-              </div>
-              <div class="details">
-                <h3 class="title">Cardtonic clone</h3>
-                <p class="dt">
-                  Cardtonic is an online payment service which offers giftcard trading and virtual cards for online purchase,
-                  this is a clone of the home page of cardtonic on mobile screens.
-                </p>
-              </div>
-            </div>
+        </aside>
+
+        <main class="editor">
+          <div class="tabbar">
+            <span class="tab active">home.md</span>
+            <span class="tab">projects.json</span>
+            <span class="tab">about.md</span>
           </div>
-          <div></div>
-        </div>
-        <div class="cent">
-          <button class="scroll-btn left" onclick="scrollToStart()">←</button>
-          <button class="scroll-btn right" onclick="scrollToEnd()">→</button>
-        </div>
-      </section>
-      <section class="education">
-        <div class=" uni">
-         <div class="uni-sub">
-          <img src="icons8-education-100.png" alt="" class="edu">
-          <span class="ed">Education</h3>
-         </div>
-          <div class="hold-uni">
-            <div class="attend">
-              <div class="utlist">
-                <p class="tt">University:</p>
-                <p class="tt">Course:</p>
-                <p class="tt">Cummulative GPA:</p>
-                <p class="tt">Year Started:</p>
-                <p class="tt">Year Ended:</p>
-                <p class="tt">School Site:</p>
+
+          <section class="panel hero" id="home">
+            <div class="hero-copy">
+              <span class="kicker">Hola! I am Ademileke</span>
+              <h1>
+                Frontend Engineer & Social Media Manager crafting clean UI systems
+                for modern teams.
+              </h1>
+              <p class="lead">
+                I design and build responsive, brand-aligned experiences with a
+                focus on clarity, motion, and performance across web platforms.
+              </p>
+              <div class="hero-actions">
+                <a class="btn primary" href="#projects">View Projects</a>
+                <a
+                  class="btn ghost"
+                  href="https://drive.google.com/file/d/16c79EUgGwjM8bQ0of5vVQdS1keOf0cOO/view?usp=sharing"
+                  >Download Resume</a>
               </div>
-              <div class="utlist2">
-                <p class="tt1">Caleb University</p>
-                <p class="tt1">Computer Science</p>
-                <p class="tt1">3.80</p>
-                <p class="tt1">Nov 12, 2020</p>
-                <p class="tt1">August 20, 2024</p>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-header">
+                <span>status.ts</span>
+                <span class="status-dot"></span>
+              </div>
+              <div class="hero-card-body">
+                <div class="hero-line">
+                  <span class="tag">role</span>
+                  <span>Frontend Developer</span>
+                </div>
+                <div class="hero-line">
+                  <span class="tag">focus</span>
+                  <span>UI Design + UX Motion</span>
+                </div>
+                <div class="hero-line">
+                  <span class="tag">availability</span>
+                  <span>Full-time / Part-time</span>
+                </div>
+                <div class="hero-icons">
+                  <span class="icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M6 19.5h12M7 17l8-8 2 2-8 8H7z" />
+                    </svg>
+                  </span>
+                  <span class="icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8.5 7 4 12l4.5 5M15.5 7 20 12l-4.5 5M10 18l4-12" />
+                    </svg>
+                  </span>
+                  <span class="icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 6.5h16v7H9l-5 4v-4H4z" />
+                    </svg>
+                  </span>
+                  <span class="icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 4 7 14h4l-1 6 7-10h-4l1-6z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel about reveal" id="about">
+            <div class="panel-title">
+              <h2>About</h2>
+              <span class="subtitle">/about.md</span>
+            </div>
+            <p class="copy">
+              I am a software developer with insights into frontend and backend
+              development — HTML, CSS, JavaScript, React, and Django. My work
+              blends clean visual hierarchy with practical engineering to deliver
+              interfaces that feel premium and intentional.
+            </p>
+          </section>
+
+          <section class="panel projects reveal" id="projects">
+            <div class="panel-title">
+              <div class="title-group">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 7.5h12a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Zm4-3h4a1 1 0 0 1 1 1v2H9v-2a1 1 0 0 1 1-1Z" />
+                  </svg>
+                </span>
+                <h2>Projects</h2>
+              </div>
+              <span class="subtitle">/projects.json</span>
+            </div>
+
+            <div class="project-grid" id="project">
+              <article class="project-card reveal" data-delay="0.05s">
+                <div class="card-head">
+                  <span class="chip">UI Design</span>
+                  <span class="chip">Frontend Dev</span>
+                  <span class="chip">2024</span>
+                </div>
+                <a class="preview" href="https://gmgmton.netlify.app/">
+                  <img src="image1.png" alt="Gm-Gm Ton" class="pj-img" />
+                </a>
+                <div class="details">
+                  <h3 class="title">Gm-Gm Ton</h3>
+                  <p class="dt">
+                    Meme landing page built for the TON blockchain community with
+                    playful visuals and a crisp hero layout.
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card reveal" data-delay="0.1s">
+                <div class="card-head">
+                  <span class="chip">UI Design</span>
+                  <span class="chip">Frontend Dev</span>
+                  <span class="chip">2024</span>
+                </div>
+                <a class="preview" href="https://tonnomads.netlify.app/">
+                  <img src="image2.png" alt="TonNomads" class="pj-img" />
+                </a>
+                <div class="details">
+                  <h3 class="title">TonNomads</h3>
+                  <p class="dt">
+                    Landing page for a growing TON ecosystem community focused on
+                    onboarding and member discovery.
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card reveal" data-delay="0.15s">
+                <div class="card-head">
+                  <span class="chip">UI Design</span>
+                  <span class="chip">Frontend Dev</span>
+                  <span class="chip">2024</span>
+                </div>
+                <a class="preview" href="#">
+                  <img src="image3.png" alt="C.C.C GCP" class="pj-img" />
+                </a>
+                <div class="details">
+                  <h3 class="title">C.C.C GCP</h3>
+                  <p class="dt">
+                    Church landing page designed for easy access to community
+                    updates and member resources.
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card reveal" data-delay="0.2s">
+                <div class="card-head">
+                  <span class="chip">UI Design</span>
+                  <span class="chip">Frontend Dev</span>
+                  <span class="chip">2024</span>
+                </div>
+                <a class="preview" href="#">
+                  <img src="image4.png" alt="Cardtonic clone" class="pj-img" />
+                </a>
+                <div class="details">
+                  <h3 class="title">Cardtonic Clone</h3>
+                  <p class="dt">
+                    Mobile-first clone for a gift card trading service with a
+                    clean product narrative.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="scroll-controls">
+              <button class="scroll-btn" onclick="scrollToStart()">←</button>
+              <button class="scroll-btn" onclick="scrollToEnd()">→</button>
+            </div>
+          </section>
+
+          <section class="panel education reveal" id="education">
+            <div class="panel-title">
+              <div class="title-group">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Zm3 5.5 6 3 6-3v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" />
+                  </svg>
+                </span>
+                <h2>Education</h2>
+              </div>
+              <span class="subtitle">/education.yml</span>
+            </div>
+
+            <div class="edu-grid">
+              <div class="edu-card reveal" data-delay="0.05s">
+                <h3>Caleb University</h3>
+                <p>Computer Science · CGPA 3.80</p>
+                <p>Nov 12, 2020 — Aug 20, 2024</p>
                 <a href="https://www.calebuniversity.edu.ng/">Caleb Homepage</a>
               </div>
-            </div>
-            <div class="attend">
-              <div class="utlist">
-                <p class="tt">University:</p>
-                <p class="tt">Course:</p>
-                <p class="tt">Cummulative GPA:</p>
-                <p class="tt">Year Started:</p>
-                <p class="tt">Year Ended:</p>
-                <p class="tt">Offical website:</p>
-              </div>
-              <div class="utlist2">
-                <p class="tt1">ALX Africa</p>
-                <p class="tt1">Software Engineering</p>
-                <p class="tt1">Project Based</p>
-                <p class="tt1">Nov 30, 2021</p>
-                <p class="tt1">July 07, 2023</p>
-                <a class="tt1" href="https://www.alxafrica.com/">AlX Site</a>
+              <div class="edu-card reveal" data-delay="0.1s">
+                <h3>ALX Africa</h3>
+                <p>Software Engineering · Project Based</p>
+                <p>Nov 30, 2021 — Jul 07, 2023</p>
+                <a href="https://www.alxafrica.com/">ALX Site</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="about-me">
-        <div class="abt-me" id="about">
-          <h2 class="ade">Hey, I'm Ademileke</h2>
-          <p class="abt-details">
-            and I'm a junior software developer with insights into frontend
-            and backend development-HTML, CSS, JavaScript, React, and Django.
-          </p>
-        </div>
-        <div class="tech">
-          <h2 class="ade">Check My Skills</h2>
-          <div class="programs">
-            <div class="p1"><img src="icons8-html5-50.png" alt="" class="p1-img">
-              <h3>HTML5</h3>
-            </div>
-            <div class="p1"><img src="icons8-css3-100.png" alt="" class="p1-img1">
-              <h3>CSS3</h3>
-            </div>
-            <div class="p1"><img src="icons8-js-50.png" alt="" class="p1-img">
-              <h3>React</h3>
-            </div>
-          </div>
-          <div class="p1"><img src="icons8-teddy-bear-100.png" alt="" class="p-imgb"></div>
-          <div class="cont-details">
-            <div class="ct">
-              <h2 class="ade-cont" id="contact">Contact Me</h3>
-            </div>
-              <div class="social-links">
-                <a href="https://www.twitter.com/Anakincoco"><img src="icons8-twitter-80.png" alt="twitter" class="sl1"></a>
-                <a href=""><img src="icons8-linkedin-100.png" alt="linkedin" class="sll1"></a>
-                <a href="https://www.telegram.org/anakincoco"><img src="icons8-telegram-50.png" alt="telegram" class="slt"></a>
-                <a href="https://www.github.com/Ademileke12"><img src="icons8-github-80.png" alt="github" class="slg"></a>
-                <p>Email:Samuelabudu21@gmail.com</p>
-              </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <div class="mobile-menu">
-        <div class="hold">
-          <div class="icons">
-           <a href=#about><img src="icons8-about-50.png" alt="about" class="iconz" /></a>
-          </div>
-          <div class="icons">
-            <a href=#project><img src="icons8-project-50.png" alt="project" class="iconz" /></a>
-          </div>
-          <div class="icons">
-            <a href="https://drive.google.com/file/d/16c79EUgGwjM8bQ0of5vVQdS1keOf0cOO/view?usp=sharing"><img src="icons8-resume-50.png" alt="resume" class="iconz" /></a>
-          </div>
-          <div class="icons">
-           <a href="https://docs.google.com/document/d/1vWzTpbCUapP3CSHVymuAOZ56j2qZ0Pkj/edit?usp=sharing&ouid=112261393798826214567&rtpof=true&sd=true"><img src="icons8-cv-50.png" alt="cover-letter" class="iconz" /></a> 
-          </div>
-          <div class="icons">
-            <a href=#contact><img src="icons8-social-50.png" alt="Contact" class="iconz" /></a>
-          </div>
-        </div>
+          <section class="panel skills reveal" id="skills">
+            <div class="panel-title">
+              <h2>Skills</h2>
+              <span class="subtitle">/skills.ts</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card reveal" data-delay="0.05s">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 4h12l-1.2 13.5L12 20l-4.8-2.5L6 4Z" />
+                    <path d="M9 8h6M9 12h6M9 16h4" />
+                  </svg>
+                </span>
+                <h3>HTML5</h3>
+                <p>Semantic structure and accessible markup.</p>
+              </div>
+              <div class="skill-card reveal" data-delay="0.1s">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 4h12l-1.1 13.5L12 20l-4.9-2.5L6 4Z" />
+                    <path d="M9 9h6M9 12h6M9 15h5" />
+                  </svg>
+                </span>
+                <h3>CSS3</h3>
+                <p>Responsive, scalable UI systems.</p>
+              </div>
+              <div class="skill-card reveal" data-delay="0.15s">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 6h10v12a2 2 0 0 1-2 2H7" />
+                    <path d="M10 10v5M14 10v5M9 15a2 2 0 0 0 4 0" />
+                  </svg>
+                </span>
+                <h3>JavaScript</h3>
+                <p>Interactive experiences and data flows.</p>
+              </div>
+              <div class="skill-card reveal" data-delay="0.2s">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 4 7 14h4l-1 6 7-10h-4l1-6z" />
+                  </svg>
+                </span>
+                <h3>Creative Direction</h3>
+                <p>Visual storytelling and brand positioning.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel contact reveal" id="contact">
+            <div class="panel-title">
+              <h2>Contact</h2>
+              <span class="subtitle">/contact.txt</span>
+            </div>
+            <div class="contact-grid">
+              <div class="contact-card">
+                <h3>Let us collaborate</h3>
+                <p>Email: Samuelabudu21@gmail.com</p>
+              </div>
+              <div class="social-links">
+                <a href="https://www.twitter.com/Anakincoco" aria-label="Twitter">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 7.5a6.6 6.6 0 0 1-2 .6 3.3 3.3 0 0 0 1.4-1.9 6.8 6.8 0 0 1-2.1.8 3.3 3.3 0 0 0-5.7 3 9.4 9.4 0 0 1-6.8-3.5 3.3 3.3 0 0 0 1 4.4 3.2 3.2 0 0 1-1.5-.4 3.3 3.3 0 0 0 2.6 3.2 3.4 3.4 0 0 1-1.5.1 3.3 3.3 0 0 0 3.1 2.3 6.7 6.7 0 0 1-4.1 1.4A6.6 6.6 0 0 1 4 19.8a9.4 9.4 0 0 0 5.1 1.5c6.1 0 9.5-5.1 9.5-9.5v-.4A6.8 6.8 0 0 0 20 7.5Z" />
+                  </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.5 9.5V19M6.5 6.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM10.5 9.5h3v1.5a3.5 3.5 0 0 1 3-1.5c2 0 3.5 1.3 3.5 4V19h-3v-4.5c0-1.2-.5-2-1.6-2s-1.9.8-1.9 2V19h-3z" />
+                  </svg>
+                </a>
+                <a href="https://www.telegram.org/anakincoco" aria-label="Telegram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 5 4.5 11.2a1 1 0 0 0 .1 1.9l3.6 1.2L17.5 8l-7 7.4.2 3.8a1 1 0 0 0 1.6.7l2.7-2.2 3.5 2.2a1 1 0 0 0 1.5-.6L22 6.2A1 1 0 0 0 20 5Z" />
+                  </svg>
+                </a>
+                <a href="https://www.github.com/Ademileke12" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3.5a8.5 8.5 0 0 0-2.7 16.6c.4.1.6-.2.6-.5v-2c-2.5.5-3-1-3-1a2.4 2.4 0 0 0-1-1.3c-.8-.5.1-.5.1-.5a1.9 1.9 0 0 1 1.4 1 2 2 0 0 0 2.7.8 2 2 0 0 1 .6-1.2c-2-.2-4.2-1-4.2-4.6a3.6 3.6 0 0 1 1-2.5 3.3 3.3 0 0 1 .1-2.5s.8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.3 2.6-1 2.6-1a3.3 3.3 0 0 1 .1 2.5 3.6 3.6 0 0 1 1 2.5c0 3.6-2.2 4.4-4.2 4.6a2.3 2.3 0 0 1 .7 1.8v2.7c0 .3.2.6.6.5A8.5 8.5 0 0 0 12 3.5Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
-      <div>
-        <!-- <span>X</span>
-        <span>X</span> -->
-      </div>
-    </main>
+
+      <footer class="statusbar">
+        <span>Portfolio • VSCode UI</span>
+        <span>Built with HTML / CSS / JS</span>
+      </footer>
+
+      <nav class="mobile-dock">
+        <a href="#home" aria-label="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 11.5 12 4l8 7.5v7a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z" />
+          </svg>
+        </a>
+        <a href="#projects" aria-label="Projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 7.5h12a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Zm4-3h4a1 1 0 0 1 1 1v2H9v-2a1 1 0 0 1 1-1Z" />
+          </svg>
+        </a>
+        <a href="#education" aria-label="Education">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Zm3 5.5 6 3 6-3v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" />
+          </svg>
+        </a>
+        <a href="#skills" aria-label="Skills">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.5 7 4 12l4.5 5M15.5 7 20 12l-4.5 5M10 18l4-12" />
+          </svg>
+        </a>
+        <a href="#contact" aria-label="Contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 6h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9l-4 3v-3H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
