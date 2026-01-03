@@ -586,6 +586,43 @@ svg {
   gap: 16px;
 }
 
+.marketing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.marketing-card {
+  background: var(--panel);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 18px;
+  display: grid;
+  gap: 10px;
+  min-height: 260px;
+}
+
+.content-links {
+  display: grid;
+  gap: 8px;
+}
+
+.content-links a {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: rgba(79, 193, 255, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  font-size: 0.92rem;
+}
+
+.content-links a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(79, 193, 255, 0.4);
+}
+
 .skill-card {
   background: var(--panel);
   border-radius: 14px;
@@ -643,11 +680,44 @@ svg {
 .statusbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 18px;
   background: var(--panel-2);
   border-top: 1px solid var(--border);
   font-size: 0.85rem;
   color: var(--muted);
+  gap: 16px;
+}
+
+.terminal-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel-3);
+  font-size: 0.8rem;
+  min-width: 180px;
+}
+
+.terminal-search .prompt {
+  color: var(--accent);
+}
+
+.terminal-search input {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  outline: none;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.search-hit {
+  border-radius: 6px;
+  background: rgba(80, 194, 255, 0.2);
+  padding: 2px 4px;
 }
 
 .mobile-dock {
